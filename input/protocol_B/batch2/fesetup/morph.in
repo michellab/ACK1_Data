@@ -1,0 +1,22 @@
+FE_type = Sire
+#mcs.match_by = spatially-closest
+AFE.separate_vdw_elec = False
+
+gaff = gaff2
+
+[ligand]
+basedir = poses
+file.name = ligand.mol2
+molecules = 16, 44, 45 
+box.type = rectangular
+
+morph_pairs = 44 > 45, 45 > 44, 16 > 44, 44 > 16
+
+[protein]
+basedir = protein
+file.name = ack1_35.pdb
+molecules = SIM 
+
+[complex]
+pairs = SIM : 16, SIM : 44, SIM : 45 
+

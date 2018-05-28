@@ -1,0 +1,53 @@
+CUDA DEVICES: 0
+lambda is:  0.400
+"/home/julien/sire.app/share/Sire/scripts/somd-freenrg.py" 
+
+srun: error: node011: task 0: Exited with exit code 255
+Loading configuration information from file ../../input/sim.cfg
+
+ usage: somd-freenrg [-h] [-C [CONFIG]] [-H] [--author] [--version]
+                    [-t [TOPOLOGY_FILE]] [-c [COORDINATE_FILE]]
+                    [-m [MORPH_FILE]] [-d [DEVICE]] [-n [NMOVES]]
+                    [-p [PLATFORM]] [-l [LAMBDA_VAL]]
+
+Perform molecular dynamics single topology free energy calculations using
+OpenMM
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -C [CONFIG], --config [CONFIG]
+                        Supply an optional CONFIG file to control the
+                        calculation.
+  -H, --help-config     Get additional help regarding all of the parameters
+                        (and their default values) that can be set in the
+                        optionally-supplied CONFIG file
+  --author              Get information about the authors of this script.
+  --version             Get version information about this script.
+  -t [TOPOLOGY_FILE], --topology_file [TOPOLOGY_FILE]
+                        The Amber topology file containing the system.
+  -c [COORDINATE_FILE], --coordinate_file [COORDINATE_FILE]
+                        The Amber coordinate file giving the coordinates of
+                        all of the atoms in the passed topology file.
+  -m [MORPH_FILE], --morph_file [MORPH_FILE]
+                        The morph file describing the single topology
+                        calculation to be performed.
+  -d [DEVICE], --device [DEVICE]
+                        The device ID of the GPU on which you want to run the
+                        simulation.
+  -n [NMOVES], --nmoves [NMOVES]
+                        The number of Molecular Dynamics moves you want to
+                        run.
+  -p [PLATFORM], --platform [PLATFORM]
+                        The OpenMM platform on which you want to run the
+                        simulation.
+  -l [LAMBDA_VAL], --lambda_val [LAMBDA_VAL]
+                        The lambda value at which you want to run the
+                        simulation.
+
+somd-freenrg is built using Sire and OpenMM and is distributed under the GPL.
+For more information please visit http://siremol.org
+
+Please supply the name of an existing topology, coordinate and morph file.
+(cannot find coordinate file ../../input/solvated.rst7)
+(cannot find topology file ../../input/solvated.parm7)
+Starting /home/julien/sire.app/bin/somd-freenrg: number of threads equals 32

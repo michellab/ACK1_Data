@@ -1,0 +1,61 @@
+
+[globals]
+forcefield = amber, ff14SB, tip3p
+gaff = gaff2
+mdengine = amber, pmemd
+
+[ligand]
+basedir = poses
+file.name = ligand.mol2
+molecules = 6
+calc_charge = True
+
+box.type = rectangular
+box.length = 12.0
+neutralize = True 
+
+min.nsteps = 1000
+min.restr_force = 10.0
+min.restraint = notsolvent
+
+md.heat.nsteps = 1000
+md.heat.restr_force = 10.0
+md.heat.restraint = notsolvent
+
+md.constT.nsteps = 1000
+md.constT.restr_force = 10.0
+md.constT.restraint = notsolvent
+
+md.press.T = 298.0
+md.press.nsteps = 10000
+md.press.p = 1.0
+
+[protein]
+basedir = protein
+file.name = ack1_35.pdb
+molecules = SIM 
+neutralize = True
+
+[complex]
+pairs = SIM : 6
+
+box.type = rectangular
+box.length = 10.0
+align_axes = True
+neutralize = yes
+
+min.nsteps = 1000
+min.restr_force = 10.0
+min.restraint = notsolvent
+
+md.heat.nsteps = 1000
+md.heat.restr_force = 10.0
+md.heat.restraint = notsolvent
+
+md.constT.nsteps = 1000
+md.constT.restr_force = 10.0
+md.constT.restraint = notsolvent
+
+md.press.T = 298.0
+md.press.nsteps = 5000
+md.press.p = 1.0
