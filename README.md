@@ -3,7 +3,7 @@ This repository contains scripts and relevant data used for the analysis of the 
 
 ## Repository structure
 
-**input** : contains required input strucutres and scripts to run the simulations with Sire.    
+**input** : contains required input structures and scripts to run the simulations with Sire.    
 **analysis** : contains analysis carried out on the output of the simulations. 
 
 
@@ -23,4 +23,4 @@ Virtual in silico screening in drug discovery frequently relies on a cascade of 
 
 ## Published version
 
-The bioarxiv version can be found [here]().
+The bioarxiv version can be found [here](https://www.biorxiv.org/content/early/2018/05/29/333120).
